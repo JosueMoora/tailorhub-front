@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Restaurant List App
 
-## Getting Started
+Welcome to the Restaurant List App! This is a simple web application that allows you to explore and manage your list of favorite restaurants. You can use this README to get started with the app on your own computer.
 
-First, run the development server:
+## Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Before you begin, make sure you have the following installed on your system:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Vs code](https://code.visualstudio.com/): Ensure you have Visual studio code installed to run the application.
+- [Node.js](https://nodejs.org/): Ensure you have Node.js installed to run the application and its dependencies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the Repository**: Start by cloning this repository to your local machine using the following command:
 
-## Learn More
+   ```bash
+   git clone https://github.com/JosueMoora/tailorhub-front.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Navigate to the Directory**: Change your working directory to the project folder:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd tailorhub-front
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Install Dependencies**: Install the required dependencies for the frontend:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
+4. **Environment Variables**: Set up the environment variables by creating a .env file in the client directory with the following content: <br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    client:
+   ```env
+   TOKEN_SECRET=your-secret-key
+   ```
+    Replace your-secret-key with your own secret key for JWT authentication.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. **Start the Frontend**:  Run the following command in the client directory to start the frontend:
+
+   ```bash
+   npm run dev
+   ```
+6. **Access the App**:   Open your web browser and go to http://localhost:3000 to access the Restaurant List App.
+
+## Usage
+
+ • Explore restaurants, mark them as favorites, and manage your list. <br>
+ • Log in and log out to access your personalized favorites list.
